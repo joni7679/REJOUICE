@@ -214,6 +214,20 @@ body {
     height: 100vh;
     position: relative;
 }
+.silder-box{
+    width: 300px;
+    height: 300px;
+}
+
+.silder-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain; */
+    
+}
 
 .silder-section h1 {
     font-size: 9vw;
@@ -225,32 +239,57 @@ body {
 }
 
 .swiper {
-    height: 60vh;
-    width: 100%;
-    /* background-color: red; */
-}
-
-.swiper-div {
     width: 100%;
     height: 100%;
-}
+  }
 
-.swiper-slide {
+  .swiper-slide {
+    width: 400px;
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-end;
-    /* background-color: red; */
-    width: 400px !important;
-}
+    height: 400px;
+  }
 
-.swiper-slide img {
+  .swiper-slide img {
+    display: block;
+    width: 18%;
 
-    width: 20%;
     object-fit: cover;
-}
+  }
+
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
 
 .fotter-section{
     width: 100%;

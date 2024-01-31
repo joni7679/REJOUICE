@@ -111,7 +111,7 @@ gsap.from(".page2 h2", {
         scroller: "body",
         start: "top 47%",
         end: "top 46%",
-        markers: true,
+        // markers: true,
         scrub: 2,
     }
 });
@@ -134,3 +134,5 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     },
 });
+
+
