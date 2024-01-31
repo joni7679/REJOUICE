@@ -108,7 +108,7 @@ gsap.from(".page2 h2", {
     duration: 0.1,
     scrollTrigger: {
         trigger: ".page2",
-        scroller: "body",
+        scroller: ".main",
         start: "top 47%",
         end: "top 46%",
         // markers: true,
@@ -135,4 +135,32 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+
+var tl = gsap.timeline();
+tl.from(".lodader h3", {
+    x: 40,
+    opacity:0,
+    duration:1,
+    stagger:0.1,
+
+})
+
+tl.to(".lodader h3",{
+    opacity:0,
+    x:-10,
+    stagger:-0.1, 
+    duration:1,
+
+
+})
+
+tl.to(".lodader",{
+    opacity:0,
+   
+})
+
+tl.to(".lodader",{
+    display:"none",
+   
+})
 
