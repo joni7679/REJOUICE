@@ -1,7 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
-
-
 const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".main"),
     smooth: true
@@ -150,17 +147,14 @@ tl.to(".lodader h3",{
     x:-10,
     stagger:-0.1, 
     duration:1,
-
-
 })
 
 tl.to(".lodader",{
     opacity:0,
-   
+
 })
 
 tl.to(".lodader",{
     display:"none",
-   
 })
 
